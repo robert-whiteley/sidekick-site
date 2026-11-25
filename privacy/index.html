@@ -21,6 +21,7 @@
 </li><li>Contacts, calendar events and notifications it reads, if you allow it.
 </li><li>Where you have been, if you turn on location: places are kept as points on the phone and named using a list of towns built into the app.
 </li><li>Phone activity you allow it to read, such as step counts, which apps you used and for how long (screen time), and text you copy, if you ask about it.
+</li><li>Your texts (SMS) and call history, only if Sidekick is your phone's digital assistant and you allow it: read on the phone when you ask (or when a routine you made asks), never copied into Sidekick's memory and never sent anywhere. Texts you approve are sent from your phone like any text, through your mobile network.
 </li><li>Routines you set up (for example "every evening, recap my day"): these run on the phone at the time you chose.
 </li></ul>
 <p>All of this is processed on the phone by AI models that run on the phone. The memory database is encrypted, with its key kept in the phone's secure key store. Location, if you allow it, is turned into a town name using a list built into the app, with no online lookup. Sidekick turns off Android's automatic cloud backup, so this data is not copied to Google's backup either.</p>
@@ -35,10 +36,11 @@
 </li><li><strong>Google Drive backup:</strong> uploads your exported backup file to your Drive. Sidekick can only see files it created.
 <p>Google's privacy policy applies to that data. You can turn each feature off in Settings, and remove Sidekick's access at myaccount.google.com/permissions. Sidekick's use of information received from Google APIs follows the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
 </li></ul>
-</li><li><strong>Weather — only with online lookup on, when you ask about the weather.</strong> Your location, rounded to about 1 km, is sent to the Norwegian Meteorological Institute (api.met.no) to get the forecast. Nothing else is sent.
+</li><li><strong>Weather — only with online lookup on, when you ask about the weather.</strong> Your location, rounded to about 1 km, is sent to the Norwegian Meteorological Institute (api.met.no) to get the forecast. Nothing else is sent. Also with online lookup on, when you ask where you are, your position is sent to Google's address lookup built into Android to get the street name.
 </li><li><strong>Links and apps you open.</strong> When you tap a link, or send a message through another app (such as Messages or WhatsApp), that app or website handles it under its own policy.
+</li><li><strong>Quick fixes — on unless you turn them off</strong> (Settings → Advanced → Get quick fixes). On Wi-Fi, at most every few hours, Sidekick asks Expo (expo.dev, the service that delivers small app fixes) whether a fix is available. The request contains only the app's version information (runtime version, platform, update channel and the current update's id); like any internet request, Expo sees your phone's IP address. No personal information, memories or usage data are sent. Turned off, Sidekick never contacts Expo and fixes arrive with Google Play updates.
 </li></ol>
-<p>App updates come only through Google Play.</p>
+<p>Full app updates come through Google Play.</p>
 <h2>Camera, microphone and other permissions</h2>
 <p>Sidekick asks for each permission when you first use the feature that needs it. You can refuse or withdraw it in the app's Settings or in Android settings. The camera and microphone are only used while you have listening or the camera turned on, and Android shows its indicator whenever they are in use. Consent mode, which is on by default where the law requires everyone's agreement to record, keeps nothing of voices that haven't agreed.</p>
 <h2>Children</h2>
